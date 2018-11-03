@@ -1,2 +1,3 @@
 # it-work-page
-it web portal for company projects
+je důležité mít verzi typescript "typescript": "^3.0.3"
+u scriptu nodemon je důležité mít ts-node, jinak nebude fungovat import
