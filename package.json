@@ -1,0 +1,33 @@
+{
+  "name": "@onio/it_projects",
+  "version": "1.0.0",
+  "description": "fjdsklafjdslkůfjadsů",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.ts --exec ts-node",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GALLLASMILAN/it-work-page.git"
+  },
+  "author": "Milan Gallas, Jiří Malina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GALLLASMILAN/it-work-page/issues"
+  },
+  "homepage": "https://github.com/GALLLASMILAN/it-work-page#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "jest": "^23.6.0",
+    "ts-node": "^7.0.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.0",
+    "@types/jest": "^23.3.9",
+    "nodemon": "^1.18.5",
+    "ts-jest": "^23.10.4",
+    "typescript": "^2.2.1"
+  }
+}
