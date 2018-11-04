@@ -2,11 +2,11 @@ const express = require('express');
 const router = express.Router();
 import { Collection } from 'mongodb';
 
-import * as mongo from '../../lib/mongo';
-import { isValidUserDataRegistration } from '../../model/is-valid-user-data';
+import * as mongo from '../../../lib/mongo';
+import { isValidUserDataRegistration } from '../../../model/is-valid-user-data';
 
-import getHash from '../../model/get-hash';
-import getUser from '../../model/mongo/get-user';
+import getHash from '../../../model/get-hash';
+import getUser from '../../../model/mongo/get-user';
 
 router.post('/', async (req, res) => {
     try {

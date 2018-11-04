@@ -2,11 +2,11 @@ const express = require('express');
 const router = express.Router();
 
 const jwt = require('jsonwebtoken');
-import config from '../../config/';
-import { isValidUserDataLogin } from '../../model/is-valid-user-data';
+import config from '../../../config/';
+import { isValidUserDataLogin } from '../../../model/is-valid-user-data';
 
-import getUser from '../../model/mongo/get-user';
-import getHash from '../../model/get-hash';
+import getUser from '../../../model/mongo/get-user';
+import getHash from '../../../model/get-hash';
 
 router.post('/', async (req, res) => {
     try {
