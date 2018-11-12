@@ -9,7 +9,7 @@ const config = {
     },
     server: {
         port: 4000,
-        production: true
+        production: false
     }
 };
 

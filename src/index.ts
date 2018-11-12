@@ -1,11 +1,17 @@
-const express = require('express');
+
 import { Express } from 'express';
-const app: Express = express();
-const bodyParser = require('body-parser');
+import buildApp from './build-app';
+import config from './config/';
 
-// import userRouter from './routes/user/';
+// environment
+const app: Express = buildApp(config.server.production);
+const port = process.env.PORT || config.server.port;
+
+// routes
 import v1Router from './routes/v1';
-
-app.use(bodyParser.json());
 app.use('/v1', v1Router);
-app.listen(3000);
+
+// run server
+app.listen(port, function() {
+    console.log(`application running on port ${port}`);
+});

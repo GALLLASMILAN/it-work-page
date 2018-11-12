@@ -13,7 +13,6 @@ router.post('/', async (req, res) => {
         if (!isValidUserDataLogin(req.body)) {
             return res.status(403).json();
         }
-
         const user = await getUser(req.body.email);
 
         if (!user) {
@@ -21,7 +20,6 @@ router.post('/', async (req, res) => {
                 errorMessage: 'User not found'
             });
         }
-
         if (user.password !== getHash(req.body.password, req.body.email)) {
             return res.status(403).json({
                 errorMessage: 'Password not correct'
